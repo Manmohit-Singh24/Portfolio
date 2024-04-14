@@ -1,0 +1,194 @@
+body{margin:0;}
+
+.profile{
+    border-radius: 50%;
+    height: 150px;
+    box-shadow: 0 0 10px 2px #A228ED;
+}
+
+#hero{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(180deg,#A228ED  ,#6675ff40 );
+    width: 100% ;
+    height: 85vh;
+    padding-top: 10vh;   
+}
+#hero h1{
+    font-family: "Source Serif 4", serif;
+    font-weight: 400;
+    color:#6A45B2;
+    margin-bottom:10px;
+    font-size: 25pt;
+}
+#hero .line{
+    height: 0px;
+    margin-top: 20px;
+    box-shadow: 0 0 3px 1px #6945b266;
+
+}
+.h1{
+    grid-column-start:2;
+}
+.h2{
+    grid-column-start:4;
+}
+.heading{
+    display: grid;
+    grid-template: auto 0 0 / 2fr 1fr 260px 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+#hero h2{
+    font-family: "Questrial",sans-serif;
+    margin-top: 0px;
+    width: min(300px);
+    font-size: 15pt;
+    color: #9683bd;
+    text-align: center;
+}
+
+    /* Social */
+
+#social{
+    display: flex;
+    justify-content:center;
+    width: 50%;
+    gap: 20px;
+    text-align: center ;
+    padding: 20px 10px ;
+    border-top: 1px solid #9683bd64;
+    border-bottom: 1px solid #9683bd64;
+}
+
+.sc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px; 
+    width: 35px;
+    border: 2px dashed gray;
+    border-radius:50% ;
+}
+.sc svg{
+    fill: rgb(75, 75, 75);
+    height: 100%;
+    transition-duration: 0.2s;
+    border-radius: 50%;
+    
+}
+#twitter{
+    stroke: rgb(75, 75, 75);
+    fill: none;
+}
+
+#git{
+    height: 100%;
+    border-radius: 50%;
+}
+.sc:hover{
+    height: 37px; 
+    width: 38px;
+    border-style: hidden;
+    
+}
+.INSTA:hover{
+    background:
+    radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f
+    60%, #285aeb)
+}
+#insta:hover{
+    fill: rgb(205, 205, 205);
+    background:
+    radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f
+    60%, #285aeb)
+}
+
+#git:hover{
+    fill: rgba(37, 37, 37, 0.786);
+    background-color: rgb(205, 205, 205);
+    border-radius: 50%;
+}
+.LI:hover{
+    background-color: #007ebb;
+}
+#linkedin:hover{
+    fill: rgb(197, 197, 197);
+}
+.TW:hover{
+    background-color: #2a8fc3;
+}
+#twitter:hover{
+    fill: rgb(205, 205, 205);
+    stroke: #2a8fc3;
+}
+
+ /*      WORK     */
+#work{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(180deg ,#6675ff40 10%, white);
+    width: 100% ;
+
+}
+#work .heading{
+    padding:100px 0px;
+    display: grid;
+    grid-template: auto 0 0 / 1fr 250px 1fr ;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+}
+#work h2{
+    color: #9683BD; 
+    padding: 25px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 2px #9683bd50 ;
+}
+
+#work .line{
+    box-shadow: 0 0 5px 1px #9683bd6d ;
+    
+}
+
+#showcase{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.row{
+    display: flex;
+width: 100%;
+    justify-content: space-around;
+}
+.projects{
+    display: grid;
+    grid-template: 75px 75px 20px auto / 180px 30px 55px 30px ; 
+}
+.landscape {
+    height: 150px ;
+    grid-column:span 3 ;
+}
+
+.portrait{
+    height: 150px;
+    grid-column-start:3;
+    grid-row-start: 2;
+}
+.projects p{
+    grid-row-start: 4;
+    grid-column: span 2;
+}
+
