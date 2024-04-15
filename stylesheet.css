@@ -191,4 +191,16 @@ width: 100%;
     grid-row-start: 4;
     grid-column: span 2;
 }
+@media screen and (max-width: 1100px) {
+    #showcase{
+        display: grid;
+        grid-template: auto auto auto auto  / auto auto  ;
+    }
+}
 
+@media screen and (max-width :720px) {
+    #showcase{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
